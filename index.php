@@ -3,15 +3,14 @@
 require_once "vendor/autoload.php";
 
 use Doctrine\Instantiator\Instantiator;
-use KrzysztofMazur\ObjectMapper\Intergration\DoctrineInstantiatorAdapter;
-use KrzysztofMazur\ObjectMapper\Mapping\FieldFactory;
-use KrzysztofMazur\ObjectMapper\Mapping\FieldsMatchmaker;
+use KrzysztofMazur\ObjectMapper\Builder\ObjectMapperBuilder;
+use KrzysztofMazur\ObjectMapper\Integration\DoctrineInstantiatorAdapter;
+use KrzysztofMazur\ObjectMapper\Mapping\Field\FieldFactory;
+use KrzysztofMazur\ObjectMapper\Mapping\Field\FieldsMatchmaker;
 use KrzysztofMazur\ObjectMapper\Mapping\MappingRepository;
-use KrzysztofMazur\ObjectMapper\Mapping\PropertyNameConverter;
-use KrzysztofMazur\ObjectMapper\ObjectMapperBuilder;
+use KrzysztofMazur\ObjectMapper\Util\PropertyNameConverter;
 
-$propertyConverter = new PropertyNameConverter();
-$matchmaker = new FieldsMatchmaker($propertyConverter);
+$matchmaker = new FieldsMatchmaker(new PropertyNameConverter());
 $instantiator = new DoctrineInstantiatorAdapter(new Instantiator());
 $repository = new MappingRepository(
     [
@@ -26,7 +25,7 @@ $repository = new MappingRepository(
     $matchmaker
 );
 
-$mapper = ObjectMapperBuilder::getInstance()
+$mapper = ObjectMapperBuilder::create()
     ->setInitializer($instantiator)
     ->setRepository($repository)
     ->build();
