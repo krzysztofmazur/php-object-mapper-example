@@ -26,7 +26,7 @@ $repository = new MappingRepository(
 );
 
 $mapper = ObjectMapperBuilder::create()
-    ->setInitializer($instantiator)
+    ->setInstantiator($instantiator)
     ->setRepository($repository)
     ->build();
 

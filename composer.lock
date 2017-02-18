@@ -66,12 +66,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/krzysztofmazur/php-object-mapper.git",
-                "reference": "6077bc07c059205e3117717c493c649a5d56b96f"
+                "reference": "f57e6118da938d88afa2ac30d635ddb3be0b705d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/krzysztofmazur/php-object-mapper/zipball/6077bc07c059205e3117717c493c649a5d56b96f",
-                "reference": "6077bc07c059205e3117717c493c649a5d56b96f",
+                "url": "https://api.github.com/repos/krzysztofmazur/php-object-mapper/zipball/f57e6118da938d88afa2ac30d635ddb3be0b705d",
+                "reference": "f57e6118da938d88afa2ac30d635ddb3be0b705d",
                 "shasum": ""
             },
             "require": {
@@ -107,7 +107,7 @@
             ],
             "description": "Object mapper for PHP, convert your Model to DTO objects",
             "homepage": "https://github.com/krzysztofmazur",
-            "time": "2017-02-17 12:33:04"
+            "time": "2017-02-18 11:44:39"
         }
     ],
     "packages-dev": [],
