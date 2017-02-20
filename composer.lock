@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "16693d9ef030343f538e486a1f98546f",
+    "content-hash": "890e58960ade55cbbf3e4ef7a92418e9",
     "packages": [
         {
             "name": "doctrine/instantiator",
@@ -62,7 +62,7 @@
         },
         {
             "name": "krzysztofmazur/php-object-mapper",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/krzysztofmazur/php-object-mapper.git",
@@ -107,15 +107,13 @@
             ],
             "description": "Object mapper for PHP, convert your Model to DTO objects",
             "homepage": "https://github.com/krzysztofmazur",
-            "time": "2017-02-20 11:32:52"
+            "time": "2017-02-20T11:32:52+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "krzysztofmazur/php-object-mapper": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

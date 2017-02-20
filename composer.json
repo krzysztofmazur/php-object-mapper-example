@@ -1,21 +1,21 @@
 {
-    "name": "krzysztofmazur/php-object-mapper-example",
-    "description": "Example of usage php-object-mapper library",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Krzysztof Mazur",
-            "email": "krz@ychu.pl"
-        }
-    ],
-    "require": {
-        "krzysztofmazur/php-object-mapper": "dev-master",
-        "doctrine/instantiator": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "": "src/"
-        }
+  "name": "krzysztofmazur/php-object-mapper-example",
+  "description": "Example of usage php-object-mapper library",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Krzysztof Mazur",
+      "email": "krz@ychu.pl"
     }
+  ],
+  "require": {
+    "krzysztofmazur/php-object-mapper": "^0.1",
+    "doctrine/instantiator": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
 }
